@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Information">
+    <AssemblyTitle>BiomedSympCertificate.Domain.Model</AssemblyTitle>
+    <Product>BiomedSympCertificate.Domain.Model</Product>
+    <TargetFramework>net48</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+</Project>
