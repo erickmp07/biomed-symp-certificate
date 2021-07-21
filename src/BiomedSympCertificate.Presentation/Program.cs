@@ -1,5 +1,6 @@
 ﻿using BiomedSympCertificate.Infrastructure.IoC;
 using System;
+using System.Text;
 using System.Windows.Forms;
 
 namespace BiomedSympCertificate.Presentation
@@ -14,6 +15,8 @@ namespace BiomedSympCertificate.Presentation
         {
             System.Windows.Forms.Application.EnableVisualStyles();
             System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
             ContentRootBootstrapper.RegisterServicesInNewContainer();
 

@@ -1,68 +1,39 @@
-﻿<Project>
-  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk.WindowsDesktop" />
-  
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup Label="BuildRunSetup">
-	<OutputType>WinExe</OutputType>
-	<UseWindowsForms>true</UseWindowsForms>
-	
-	<StartupObject>BiomedSympCertificate.Presentation.Program</StartupObject>
-      <TargetFramework>net48</TargetFramework>
-      <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>TargetFramework</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>BiomedSympCertificate.Presentation.Program</StartupObject>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
-  
   <PropertyGroup Label="Information">
-	<Version>1.0.0</Version>
-	<InformationalVersion>1.0.0</InformationalVersion>
-	
-	<AssemblyVersion>$(Version)</AssemblyVersion>
-	<FileVersion>$(Version)</FileVersion>
-	
-	<AssemblyName>BiomedSympCertificate</AssemblyName>
-	<AssemblyTitle>BiomedSympCertificate</AssemblyTitle>
+    <InformationalVersion>1.0.0</InformationalVersion>
+    <AssemblyVersion>$(InformationalVersion)</AssemblyVersion>
+    <FileVersion>$(InformationalVersion)</FileVersion>
+    <AssemblyName>BiomedSympCertificate</AssemblyName>
+    <AssemblyTitle>BiomedSympCertificate</AssemblyTitle>
   </PropertyGroup>
-  
-  <ItemGroup Label="Compiles">
-	<Compile Update="Properties\Resources.Designer.cs">
-		<AutoGen>True</AutoGen>
-		<DependentUpon>Resources.resx</DependentUpon>
-		<DesignTime>True</DesignTime>
-	</Compile>
-	<Compile Update="Properties\Settings.Designer.cs">
-		<AutoGen>True</AutoGen>
-		<DependentUpon>Settings.settings</DependentUpon>
-		<DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-	<None Include="Properties\Settings.settings">
-		<Generator>SettingsSingleFileGenerator</Generator>
-		<LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  
   <PropertyGroup Label="DisableDefaultGlobEmbeddedResources">
-	<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
   </PropertyGroup>
-
   <ItemGroup Label="EmbeddedResources">
-	<EmbeddedResource Include="Properties\licenses.licx" Condition="'$(Configuration)' == 'Release'" />
-        
-	<EmbeddedResource Include="Properties\Resources.resx">
-		<Generator>ResXFileCodeGenerator</Generator>
-		<LastGenOutput>Resources.Designer.cs</LastGenOutput>
-		<SubType>Designer</SubType>
+    <EmbeddedResource Include="Properties\licenses.licx" Condition="'$(Configuration)' == 'Release'" />
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-        
-	<EmbeddedResource Include="**\*.resx;" Exclude="&#xD;&#xA;                **\*.user;&#xD;&#xA;                **\*.*proj;&#xD;&#xA;                **\*.sln;&#xD;&#xA;                **\*.vssscc;&#xD;&#xA;                Properties\Resources.resx">
-		<DependentUpon>%(Filename).cs</DependentUpon>
-	</EmbeddedResource>
+    <EmbeddedResource Include="**\*.resx;" Exclude="&#xD;&#xA;                **\*.user;&#xD;&#xA;                **\*.*proj;&#xD;&#xA;                **\*.sln;&#xD;&#xA;                **\*.vssscc;&#xD;&#xA;                Properties\Resources.resx">
+      <DependentUpon>%(Filename).cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
-  
-  <Import Sdk="Microsoft.NET.Sdk.WindowsDesktop" Project="Sdk.targets" />
-  
-  <ItemGroup Label="NugetPackages">
-	<PackageReference Include="DryIoc.dll" Version="4.8.1" />
-  </ItemGroup>
-  
   <ItemGroup>
     <ProjectReference Include="..\BiomedSympCertificate.Infrastructure.IoC\BiomedSympCertificate.Infrastructure.IoC.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.2.236301">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>
