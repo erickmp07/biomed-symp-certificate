@@ -18,7 +18,6 @@
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
   </PropertyGroup>
   <ItemGroup Label="EmbeddedResources">
-    <EmbeddedResource Include="Properties\licenses.licx" Condition="'$(Configuration)' == 'Release'" />
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
