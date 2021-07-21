@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Information">
+	<AssemblyTitle>BiomedSympCertificate.Domain.Service</AssemblyTitle>
+	<Product>BiomedSympCertificate.Domain.Service</Product>
+	<TargetFramework>net48</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  
+  <ItemGroup Label="ProjectReferences">
+    <ProjectReference Include="..\BiomedSympCertificate.Domain.Model\BiomedSympCertificate.Domain.Model.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup Label="NugetPackages">
+    <PackageReference Include="EPPlus" Version="4.5.3.3" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+  </ItemGroup>
+</Project>
