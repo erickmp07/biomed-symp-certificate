@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{288A6D6E-21AF-4890-8431-A1D3A7641014}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Application", "02 - Application", "{F2A64DBF-85D7-427F-8CF1-EA878E7EA2E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BiomedSympCertificate.Application", "src\BiomedSympCertificate.Application\BiomedSympCertificate.Application.csproj", "{2408CF6D-CCEC-4E06-B152-FD8CA4A749E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain", "{D7B6339D-2122-4EB5-81A6-F882438BDC60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BiomedSympCertificate.Domain.Model", "src\BiomedSympCertificate.Domain.Model\BiomedSympCertificate.Domain.Model.csproj", "{F3FC0AF0-2129-4B64-8A28-6AE8007960E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BiomedSympCertificate.Domain.Service", "src\BiomedSympCertificate.Domain.Service\BiomedSympCertificate.Domain.Service.csproj", "{36181308-BC13-48C6-82A9-71C1126BD763}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infrastructure", "04 - Infrastructure", "{6759E113-BDBE-4262-83E3-7593E00A8ED0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BiomedSympCertificate.Infrastructure.IoC", "src\BiomedSympCertificate.Infrastructure.IoC\BiomedSympCertificate.Infrastructure.IoC.csproj", "{3375B462-564D-46FE-B7EE-426DCC6DF081}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A2AD093E-3A33-4A2C-BF63-78D79CBBDBDD}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiomedSympCertificate.Presentation", "src\BiomedSympCertificate.Presentation\BiomedSympCertificate.Presentation.csproj", "{9D4F007C-1DDC-406F-94F4-047B95C12ADF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2408CF6D-CCEC-4E06-B152-FD8CA4A749E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2408CF6D-CCEC-4E06-B152-FD8CA4A749E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2408CF6D-CCEC-4E06-B152-FD8CA4A749E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2408CF6D-CCEC-4E06-B152-FD8CA4A749E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3FC0AF0-2129-4B64-8A28-6AE8007960E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3FC0AF0-2129-4B64-8A28-6AE8007960E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3FC0AF0-2129-4B64-8A28-6AE8007960E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3FC0AF0-2129-4B64-8A28-6AE8007960E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36181308-BC13-48C6-82A9-71C1126BD763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36181308-BC13-48C6-82A9-71C1126BD763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36181308-BC13-48C6-82A9-71C1126BD763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36181308-BC13-48C6-82A9-71C1126BD763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3375B462-564D-46FE-B7EE-426DCC6DF081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3375B462-564D-46FE-B7EE-426DCC6DF081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3375B462-564D-46FE-B7EE-426DCC6DF081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3375B462-564D-46FE-B7EE-426DCC6DF081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D4F007C-1DDC-406F-94F4-047B95C12ADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D4F007C-1DDC-406F-94F4-047B95C12ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D4F007C-1DDC-406F-94F4-047B95C12ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D4F007C-1DDC-406F-94F4-047B95C12ADF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2408CF6D-CCEC-4E06-B152-FD8CA4A749E9} = {F2A64DBF-85D7-427F-8CF1-EA878E7EA2E8}
+		{F3FC0AF0-2129-4B64-8A28-6AE8007960E7} = {D7B6339D-2122-4EB5-81A6-F882438BDC60}
+		{36181308-BC13-48C6-82A9-71C1126BD763} = {D7B6339D-2122-4EB5-81A6-F882438BDC60}
+		{3375B462-564D-46FE-B7EE-426DCC6DF081} = {6759E113-BDBE-4262-83E3-7593E00A8ED0}
+		{9D4F007C-1DDC-406F-94F4-047B95C12ADF} = {288A6D6E-21AF-4890-8431-A1D3A7641014}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A629B140-558A-4119-828B-25EBDCCA9F63}
+	EndGlobalSection
+EndGlobal
